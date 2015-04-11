@@ -4,10 +4,43 @@
 
 .hero {
 	background-color: #12B4A1; 
-	height: 500px;
+	height: 575px;
 }
 
 .smaller {
 	margin-top: 30px; 
 }
 
+.sm-photo {
+	width: 75%; 
+	
+
+}
+
+.button-list {
+	border-width: 1px;
+	padding: 10px; 
+	border-radius: 7px;
+	box-shadow: 10px 10px 5px #888888; 
+	background-color: #12B4A1;
+}
+
+
+
+.buttons {
+	margin: 75px 0 100px 0; 
+}
+
+.title {
+	text-align: center;
+	margin: 50px; 
+	letter-spacing: .1em;
+	line-height: 1em; 
+	font-weight: 200; 
+}
+
+h3 {
+	letter-spacing: .1em;
+	line-height: 1em; 
+	font-weight: 200; 
+}

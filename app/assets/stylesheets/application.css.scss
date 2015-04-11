@@ -16,7 +16,14 @@
  */
 @import "foundation_and_overrides";
 @import "settings";
+
+
+
  
  h1 {
  	color: #999999;
+ }
+ ul {
+ 	list-style: none; 
+ 	text-align: center; 
  }
