@@ -22,25 +22,36 @@
 	padding: 10px; 
 	border-radius: 7px;
 	box-shadow: 10px 10px 5px #888888; 
-	background-color: #12B4A1;
+	background: #12b4a1; /* Old browsers */
 }
 
 
 
 .buttons {
-	margin: 75px 0 100px 0; 
+	margin: 75px 0 75px 0; 
 }
 
 .title {
 	text-align: center;
-	margin: 50px; 
+	margin: 10px 0 50px 0; 
 	letter-spacing: .1em;
 	line-height: 1em; 
 	font-weight: 200; 
+	font-family: 'Raleway';
 }
 
-h3 {
+.name {
 	letter-spacing: .1em;
 	line-height: 1em; 
+	font-family: 'Raleway';
 	font-weight: 200; 
+	padding-top: 5px;
+}
+
+.ghost-baby {
+	padding-top: 10px; 
+}
+
+.title-png {
+	padding-top: 10px; 
 }
