@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="angularWriter">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Ghostwrite" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
-    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Raleway', :media => "all" %>
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Raleway', :media => "all" %>
+    
   </head>
 
   <body>
 
   
 
-    <%= yield %>
+<%= yield %>
 
   </body>
 </html>

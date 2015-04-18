@@ -17,9 +17,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 gem 'angularjs-rails'
+gem 'angular-rails-templates'
 
-
-gem 'angularjs-rails-resource', '~> 1.1.1'
 
 
 # Use jquery as the JavaScript library

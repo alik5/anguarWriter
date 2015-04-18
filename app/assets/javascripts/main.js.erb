@@ -1,0 +1,86 @@
+var angularWriter = angular.module('angularWriter', ['ngAnimate']);
+
+//angularWriter.config(function ($routeProvider) {
+//	$routeProvider
+
+//	.when('/hi', {
+//		templateUrl: "<%= asset_path('welcome/hi.html.') %> ", 
+//		controller: 'mainController'
+//		})
+//	});
+
+angularWriter.controller('SliderController', function($scope) {
+  $scope.phrases=[{
+    phrase: 'pick'
+  }, {
+    phrase: 'choisir'
+  }, {
+    phrase: 'wählen'
+  }, {
+   	phrase: 'blerg'
+  }, {
+    phrase: 'merp'
+  }];
+});
+ 
+angularWriter.directive('slider', function($timeout) {
+  return {
+    restrict: 'AE',
+    replace: true,
+    scope: {
+      phrases: '='
+    },
+       link: function (scope, elem, attrs) {
+	
+		scope.currentIndex=0;
+
+		scope.next=function(){
+			scope.currentIndex<scope.phrases.length-1?scope.currentIndex++:scope.currentIndex=0;
+		};
+		
+		scope.prev=function(){
+			scope.currentIndex>0?scope.currentIndex--:scope.currentIndex=scope.phrases.length-1;
+		};
+		
+		scope.$watch('currentIndex',function(){
+			scope.phrases.forEach(function(phrase){
+				phrase.visible=false;
+			});
+			scope.phrases[scope.currentIndex].visible=true;
+		});
+	  
+	  var timer;
+		
+		var sliderFunc=function(){
+			timer=$timeout(function(){
+				scope.next();
+				timer=$timeout(sliderFunc,5000);
+			},5000);
+		};
+		
+		sliderFunc();
+		
+		scope.$on('$destroy',function(){
+			$timeout.cancel(timer);
+		});
+		
+		/* End : For Automatic slideshow*/
+		
+    },
+  }
+});
+
+
+
+
+
+
+
+
+	 	
+ //	};   	
+
+
+
+
+
