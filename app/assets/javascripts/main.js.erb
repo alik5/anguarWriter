@@ -11,15 +11,15 @@ var angularWriter = angular.module('angularWriter', ['ngAnimate']);
 
 angularWriter.controller('SliderController', function($scope) {
   $scope.phrases=[{
-    phrase: 'pick'
+    phrase: ' pick'
   }, {
     phrase: 'choisir'
   }, {
     phrase: 'wählen'
   }, {
-   	phrase: 'blerg'
+   	phrase: 'plocka'
   }, {
-    phrase: 'merp'
+    phrase: ' चुनना'
   }];
 });
  
@@ -55,7 +55,7 @@ angularWriter.directive('slider', function($timeout) {
 			timer=$timeout(function(){
 				scope.next();
 				timer=$timeout(sliderFunc,5000);
-			},5000);
+			},4000);
 		};
 		
 		sliderFunc();

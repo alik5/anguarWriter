@@ -1,61 +1,95 @@
-.welcome {
-	color: blue; 
+
+
+.list {
+	margin-top: 10px;
+	padding-bottom: 10px;  
 }
 
-.hero {
-	background-color: #12B4A1; 
-	height: 100%;
-}
-
-.smaller {
-	margin-top: 30px; 
+.spacer {
+	margin: 5px; 
 }
 
 .sm-photo {
-	width: 75%; 
-	
+	width: 40%; 
+	height: auto; 
+	margin-top: 9px; 
 
 }
 
+.sm-photo:hover {
+	-webkit-animation: aia2 5s linear infinite alternate;
+    -moz-animation: aia2 5s linear infinite alternate;
+    -ms-animation: aia2 5s linear infinite alternate;
+    -o-animation: aia2 5s linear infinite alternate;
+      animation: aia2 5s linear infinite alternate;  
+}
+
 .button-list {
-	border-width: 1px;
-	padding: 10px; 
-	border-radius: 7px;
-	box-shadow: 10px 10px 5px #888888; 
-	background: #12b4a1; /* Old browsers */
+	
+	padding: 5px; 
+	text-align: center; 
+	background: transparent; 
+	border: solid;
+	border-width: 1px; 
+	border-color: #fff; 
+	border-radius: 7px; 
+	
+}
+
+.button-list li {
+	padding-top: 10px; 
+	margin: 10px; 
+}
+
+.button-list:hover {
+  background: #fff;
 }
 
 
 
 .buttons {
-	margin: 75px 0 75px 0; 
+	margin: 10px;
+	padding: 10px; 
 }
 
-.title {
-	text-align: center;
-	margin: 10px 0 50px 0; 
-	letter-spacing: .1em;
-	line-height: 1em; 
-	font-weight: 200; 
-	font-family: 'Raleway';
+.naver {
+	margin-top: 100px; 
+	color: #fff;
 }
+
+.side-nav li a {
+	color: #fff;
+}
+
 
 .name {
 	letter-spacing: .1em;
 	line-height: 1em; 
-	font-family: 'Raleway';
+	font-family: 'Hind', sans-serif;;
 	font-weight: 200; 
-	padding-top: 5px;
+	padding-top: 7px;
+
 }
 
 .ghost-baby {
-	padding-top: 10px; 
+	padding-top: 40px;
 }
+	
+
 
 .title-png {
-	padding-top: 25px; 
+	padding-top: 15px; 
 }
 
 .choice-area {
-	background-color: #FAFAFA;
+  height: 100%;
+  width: auto;
+  background: -webkit-linear-gradient(90deg, #0AE8A7 10%, #24FFBF 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #0AE8A7 10%, #24FFBF 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #0AE8A7 10%, #24FFBF 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #0AE8A7 10%, #24FFBF 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #0AE8A7 10%, #24FFBF 90%); /* W3C */
+  overflow: scroll;
+              
+              
 }
