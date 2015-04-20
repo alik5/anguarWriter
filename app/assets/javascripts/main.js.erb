@@ -1,13 +1,12 @@
-var angularWriter = angular.module('angularWriter', ['ngAnimate']);
+var angularWriter = angular.module('angularWriter', ['ngAnimate', 'templates', 'ngRoute']);
 
-//angularWriter.config(function ($routeProvider) {
-//	$routeProvider
+angularWriter.config(function ($routeProvider) {
+	$routeProvider
 
-//	.when('/hi', {
-//		templateUrl: "<%= asset_path('welcome/hi.html.') %> ", 
-//		controller: 'mainController'
-//		})
-//	});
+  .when('/', {
+	templateUrl: "main.html", 
+	})
+});
 
 angularWriter.controller('SliderController', function($scope) {
   $scope.phrases=[{
