@@ -4,8 +4,14 @@ angularWriter.config(function ($routeProvider) {
 	$routeProvider
 
   .when('/', {
-	templateUrl: "main.html", 
+	templateUrl: 'main.html', 
+	controller: 'SliderController'
 	})
+
+  .when('/personal', {
+  	templateUrl: 'personal.html',
+  	controller: 'SliderController'
+  })
 });
 
 angularWriter.controller('SliderController', function($scope) {

@@ -1,0 +1,56 @@
+<div class="row">
+   		<div class="large-4 small-3 small-offset-2 medium-3 medium-offset-2 columns">
+   			<%=image_tag "ghost-baby.png", :class => "ghost-baby" %>
+   			<div ng-controller="SliderController" >
+	   			<div class="slider" >
+	    			 <h1 class="slide" ng-repeat="phrase in phrases" ng-show="phrase.visible" >{{ phrase.phrase }}
+	    			 </h1>
+	     		<slider phrases="phrases" />
+	  			 </div>
+	 		 </div>
+	 	</div>		
+	<div class="large-4  small-4 small-offset-1 medium-4 medium-offset-1 columns list">
+		<div class="row" ng-controller="SliderController">
+		 		  <ul class="list large-block-grid-2 small-block-grid-1 medium-block-grid-1">
+		 	 			
+			     	<li class="button-list">
+			     		<%= image_tag "network.png", :class => "sm-photo" %>
+			     		<h3 class="name">NETWORK</h3>
+			     	</li>
+			   
+			    
+		     	
+		     
+		     		<li class="button-list">
+		     			<%= image_tag "apply.png", :class => "sm-photo" %>
+		     			<h3 class="name">APPLY</h3>
+		     		</li>
+
+		     		<li class="button-list">
+		     			<%= image_tag "flowers.png", :class => "sm-photo" %>
+		     			<h3 class="name">SAY THANKS</h3>
+		     		</li>
+		      
+				
+				
+		     		<li class="button-list">
+		     			<%= image_tag "follow.png", :class => "sm-photo" %>
+		     			<h3 class="name">FOLLOW UP</h3>
+		     		</li>
+	     	
+	     		</ul>
+	     	</div>
+		</div>
+	</div> 
+  </div> 
+</div>
+
+<div class="row">
+
+	<div class="large-4 large-offset-8 columns">
+		<a href="#/personal"><div class="button-list name" id="get-personal">GET PERSONAL</div></a>
+	</div>
+</div>
+
+	
+
